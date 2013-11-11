@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE components PUBLIC "-//AJAX4JSF//CDK Generator config/EN"  "http://labs.jboss.com/jbossrichfaces/component-config.dtd">
+
+<components>	
+	<component generate="true">
+		<name>com.exadel.jsfbirt.BirtWrapper</name>
+		<family>com.exadel.jsfbirt.BirtWrapper</family>
+		<classname>com.exadel.jsfbirt.component.html._BirtWrapper</classname>
+		<superclass>com.exadel.jsfbirt.component.UIBirtWrapperBase</superclass>
+		<test/>
+		<description>
+			<![CDATA[Birt Wrapper]]>
+		</description>
+		<renderer generate="true" override="true">
+			<name>com.exadel.jsfbirt.BirtRenderer</name>
+			<template>birt.jspx</template>
+		</renderer>
+		<tag generate="true">
+			<name>birtWrapper</name>
+			<classname>com.exadel.jsfbirt.taglib._BirtTag</classname>
+			<superclass>
+				org.ajax4jsf.webapp.taglib.HtmlComponentTagBase
+			</superclass>
+			<test/>
+		</tag>
+		&inherit;
+		&ui_component_attributes;
+      	&html_events;
+		
+		<property>
+			<name>configPath</name>
+			<classname>java.lang.String</classname>
+			<description>
+				The attribute  provides access to a component state on the client side
+			</description>
+		</property>	
+		<property>
+			<name>reportName</name>
+			<classname>java.lang.String</classname>
+			<description>
+				The attribute  provides access to a component state on the client side
+			</description>
+		</property>	
+	
+  	</component>
+</components>

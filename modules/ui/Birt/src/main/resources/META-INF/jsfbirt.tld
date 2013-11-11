@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+	version="2.1">
+	<tlib-version>1.0.0</tlib-version>
+	<short-name>jsf4birt</short-name>
+	<uri>http://jsf4birt.components</uri>
+
+
+
+	<tag>
+		<description>Actuate Wrapper tag. Renders report container and loads report from actuate server specified.</description>
+		<name>actuateWrapper</name>
+		<tag-class>com.exadel.jsfbirt.taglib.ActuateTag</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<description>The attribute takes a value-binding expression for a component property of
+a backing bean</description>
+			<name>binding</name>
+			<deferred-value>
+				<type>javax.faces.component.UIComponent</type>
+			</deferred-value>
+		</attribute>
+
+
+		<attribute>
+			<description>Height of report wrapper on the page</description>
+			<name>height</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Every component may have a unique id that is automatically created if omitted</description>
+			<name>id</name>
+			<rtexprvalue>false</rtexprvalue>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Actuate server login</description>
+			<name>iserverLogin</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Actuate server password</description>
+			<name>iserverPassword</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>URL to actuate server</description>
+			<name>iserverUrl</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script to be executed when the element is clicked</description>
+			<name>onclick</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script method to be executed when the element is double-clicked</description>
+			<name>ondblclick</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script method to be executed when a key is pressed down over the element</description>
+			<name>onkeydown</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script method to be executed when a key is pressed over the element and released</description>
+			<name>onkeypress</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script method to be executed when a key is released</description>
+			<name>onkeyup</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script method to be executed when a mouse button is pressed down over the element</description>
+			<name>onmousedown</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script method to be executed when a pointer is moved within the element</description>
+			<name>onmousemove</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script method to be executed when a pointer is moved away from the element</description>
+			<name>onmouseout</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script method to be executed when a pointer is moved onto the element</description>
+			<name>onmouseover</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script method to be executed when a mouse button is released</description>
+			<name>onmouseup</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>If "false", this component is not rendered</description>
+			<name>rendered</name>
+			<deferred-value>
+				<type>boolean</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Defines report design file to be loaded on the page.</description>
+			<name>reportName</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Defines if report will be run immediately after component has been rendered</description>
+			<name>runWhenRendered</name>
+			<deferred-value>
+				<type>java.lang.Boolean</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Width of report wrapper on the page</description>
+			<name>width</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Style of report container</description>
+			<name>reportContainerStyle</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>CSS class of report container</description>
+			<name>reportContainerStyleClass</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Style of report wrapper</description>
+			<name>style</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>CSS class of report wrapper</description>
+			<name>styleClass</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Defines id scroll control should be displayed</description>
+			<name>scrollControlEnabled</name>
+			<deferred-value>
+				<type>java.lang.Boolean</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Defines if mouse scrolling feature is enabled</description>
+			<name>mouseScrollingEnabled</name>
+			<deferred-value>
+				<type>java.lang.Boolean</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Defines id pan in out feature is enabled</description>
+			<name>panInOutEnabled</name>
+			<deferred-value>
+				<type>java.lang.Boolean</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Defines the map of UI options will be set for actuate viewer</description>
+			<name>uiOptions</name>
+			<deferred-value>
+				<type>java.util.Map</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Specifies message text if no report defined</description>
+			<name>emptyReportMessage</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<description>Birt Wrapper tag. Generates HTMl using BIRT engine APi and renders it in current place on the page.</description>
+		<name>birtWrapper</name>
+		<tag-class>com.exadel.jsfbirt.taglib.BirtTag</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<description>The attribute takes a value-binding expression for a component property of
+a backing bean</description>
+			<name>binding</name>
+			<deferred-value>
+				<type>javax.faces.component.UIComponent</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Defines relative path to BIRT engine's configuration folder. It should be placed under server according to BIRT runtime installation instruction </description>
+			<name>configPath</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Every component may have a unique id that is automatically created if omitted</description>
+			<name>id</name>
+			<rtexprvalue>false</rtexprvalue>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>The client side script to be executed when the element is clicked</description>
+			<name>onclick</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script method to be executed when the element is double-clicked</description>
+			<name>ondblclick</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script method to be executed when a key is pressed down over the element</description>
+			<name>onkeydown</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script method to be executed when a key is pressed over the element and released</description>
+			<name>onkeypress</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script method to be executed when a key is released</description>
+			<name>onkeyup</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script method to be executed when a mouse button is pressed down over the element</description>
+			<name>onmousedown</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script method to be executed when a pointer is moved within the element</description>
+			<name>onmousemove</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script method to be executed when a pointer is moved away from the element</description>
+			<name>onmouseout</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script method to be executed when a pointer is moved onto the element</description>
+			<name>onmouseover</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>The client side script method to be executed when a mouse button is released</description>
+			<name>onmouseup</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>If "false", this component is not rendered</description>
+			<name>rendered</name>
+			<deferred-value>
+				<type>boolean</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Defines relative path to BIRT report design file which should be placed under server and should be available through resource lookup</description>
+			<name>reportDesign</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Defines relative path to BIRT report document file which should be placed under server and should be available through resource lookup</description>
+			<name>reportDocument</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Defines page range to be rendered</description>
+			<name>pageRange</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Defines page number of report to be rendered</description>
+			<name>pageNum</name>
+			<deferred-value>
+				<type>java.lang.Long</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Defines if SVG format is allowed</description>
+			<name>svgAllowed</name>
+			<deferred-value>
+				<type>java.lang.Boolean</type>
+			</deferred-value>
+		</attribute>
+		<attribute>
+			<description>Defines locale to be used for BIRT engine </description>
+			<name>locale</name>
+			<deferred-value>
+				<type>java.util.Locale</type>
+			</deferred-value>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<description>Actuate UI option tag. Defines UI option for actuate report. See list of available options here: http://www.birt-exchange.org/documentation/JavaComponents10/JSAPI-JSdoc/symbols/actuate.viewer.UIOptions.html</description>
+		<name>actuateUIOption</name>
+		<tag-class>com.exadel.jsfbirt.taglib.ActuateUIOptionTag</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<description>Defines UI Option name</description>
+			<name>name</name>
+			<deferred-value>
+				<type>java.lang.String</type>
+			</deferred-value>
+			<required>true</required>
+		</attribute>
+
+		<attribute>
+			<description>Defines UI Option value</description>
+			<name>value</name>
+			<deferred-value>
+				<type>java.lang.Boolean</type>
+			</deferred-value>
+		</attribute>
+	</tag>
+
+</taglib>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.20" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isdisplay__Text_11_0</property>
+            <property name="value">df</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__X_12_1</property>
+            <property name="value">20</property>
+        </structure>
+        <structure>
+            <property name="name">Text_11_2</property>
+            <property name="value">df</property>
+        </structure>
+        <structure>
+            <property name="name">Text_11_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">X_12_3</property>
+            <property name="value">20</property>
+        </structure>
+        <structure>
+            <property name="name">X_12_type_</property>
+            <property name="value">integer</property>
+        </structure>
+    </list-property>
+</report>
