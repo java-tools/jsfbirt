@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.jsftools</groupId>
+    <artifactId>jsfbirt</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <groupId>org.jsftools.jsfbirt</groupId>
+  <artifactId>jsfbirt-showcase</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>JSF BIRT Demo Maven Webapp</name>
+  <build>
+    <finalName>jsfbirt-showcase</finalName>
+ </build>
+ <dependencies>
+ 
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF1</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/chartengineapi.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF2</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/chartitemapi.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF3</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/com.ibm.icu_4.0.1.v20090822.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF4</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/commons-cli-1.0.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF5</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/coreapi.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF6</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/crosstabcoreapi.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF7</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/dataadapterapi.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF8</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/dataaggregationapi.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF9</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/dataextraction.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF10</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/dteapi.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF11</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/emitterconfig.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF12</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/engineapi.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF13</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/flute.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF14</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/js.jar</systemPath>
+</dependency>
+
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF16</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/modelapi.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF17</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/modelodaapi.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF18</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/odadesignapi.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF19</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/org.apache.commons.codec_1.3.0.v20080530-1600.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF20</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/org.eclipse.emf.common_2.5.0.v200906151043.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF21</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/org.eclipse.emf.ecore.xmi_2.5.0.v200906151043.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF22</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/org.eclipse.emf.ecore_2.5.0.v200906151043.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF23</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/org.w3c.css.sac_1.3.0.v200805290154.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>com.exdel.birt</groupId>
+<artifactId>JSF24</artifactId>
+<scope>system</scope>
+<version>provided</version>
+<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/scriptapi.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>org.jsftools.jsfbirt</groupId>
+<artifactId>jsfbirt-core</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+</dependency>
+
+ </dependencies>
+	<profiles>
+		<profile>
+			<id>Tomcat6</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<dependencies>
+				<dependency>
+					<groupId>javax.faces</groupId>
+					<artifactId>jsf-api</artifactId>
+					<version>${ri}</version>
+				</dependency>
+				<dependency>
+					<groupId>javax.faces</groupId>
+					<artifactId>jsf-impl</artifactId>
+					<version>${ri}</version>
+				</dependency>
+				<dependency>
+					<groupId>javax.servlet</groupId>
+					<artifactId>servlet-api</artifactId>
+					<version>2.4</version>
+					<scope>provided</scope>
+				</dependency>
+				<dependency>
+					<groupId>javax.servlet.jsp</groupId>
+					<artifactId>jsp-api</artifactId>
+					<version>2.1</version>
+					<scope>provided</scope>
+				</dependency>
+				</dependencies>
+		</profile>
+		<profile>
+			<id>Tomcat5</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<dependencies>
+				<dependency>
+						<groupId>javax.faces</groupId>
+						<artifactId>jsf-api</artifactId>
+						<version>${ri}</version>
+					</dependency>
+					<dependency>
+						<groupId>javax.faces</groupId>
+						<artifactId>jsf-impl</artifactId>
+						<version>${ri}</version>
+					</dependency>
+				<dependency>
+					<groupId>javax.el</groupId>
+					<artifactId>el-api</artifactId>
+					<version>1.0</version>
+				</dependency>
+				<dependency>
+					<groupId>javax.el</groupId>
+					<artifactId>el-ri</artifactId>
+					<version>1.2</version>
+				</dependency>
+				<dependency>
+					<groupId>javax.servlet</groupId>
+					<artifactId>servlet-api</artifactId>
+					<version>2.4</version>
+					<scope>provided</scope>
+				</dependency>
+				<dependency>
+					<groupId>javax.servlet.jsp</groupId>
+					<artifactId>jsp-api</artifactId>
+					<version>2.0</version>
+					<scope>provided</scope>
+				</dependency>
+				</dependencies>
+		</profile>
+		<profile>
+			<id>myfaces</id>
+			<dependencies>
+				<dependency>
+					<groupId>org.apache.myfaces.core</groupId>
+					<artifactId>myfaces-api</artifactId>
+					<version>${myfaces}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.apache.myfaces.core</groupId>
+					<artifactId>myfaces-impl</artifactId>
+					<version>${myfaces}</version>
+					<scope>runtime</scope>
+				</dependency>
+			</dependencies>
+		</profile>
+	</profiles>
+ 
+</project>

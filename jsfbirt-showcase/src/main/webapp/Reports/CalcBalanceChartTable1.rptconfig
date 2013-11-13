@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.20" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isdisplay__debtParm_8_0</property>
+            <property name="value">Revolving LOC;500000;7.0;5000|Facilities;750000;5.0;10000|Capital Equipment;1500000;4.5;50000</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__simAmt_88_1</property>
+            <property name="value">300000</property>
+        </structure>
+        <structure>
+            <property name="name">simAmt_88_2</property>
+            <property name="value">300000</property>
+        </structure>
+        <structure>
+            <property name="name">simAmt_88_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">debtParm_8_3</property>
+            <property name="value">Revolving LOC;500000;7.0;5000|Facilities;750000;5.0;10000|Capital Equipment;1500000;4.5;50000</property>
+        </structure>
+        <structure>
+            <property name="name">debtParm_8_type_</property>
+            <property name="value">string</property>
+        </structure>
+    </list-property>
+</report>

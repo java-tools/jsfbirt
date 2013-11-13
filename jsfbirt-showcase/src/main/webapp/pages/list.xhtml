@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:birt="http://jsf4birt.components">
+<f:view>
+	<head>
+		<style type="text/css">
+			.report {
+				overflow-y : auto;
+			}
+		</style>
+	</head>
+	<body>
+	<h:form>
+		<h:commandLink actionListener="#{bean.previousPage}" value="Pre" disabled="#{bean.pageNum eq 1}" />
+		<h:outputText value=" " />
+		<ui:repeat value="#{bean.pages}" var="i">
+			<h:commandLink actionListener="#{bean.changePage}" value="#{i}" disabled="#{bean.pageNum == i}">
+				<f:param name="_page" value="#{i}"/>
+			</h:commandLink>
+			<h:outputText value=" " />
+		</ui:repeat>
+		<h:commandLink actionListener="#{bean.nextPage}" value="Next" disabled="#{bean.pageNum eq bean.pageCount}"/>
+	</h:form>
+	<h:form>
+		<birt:birtWrapper height="300px" styleClass="report" width="9in" pageNum="#{bean.pageNum}" reportDocument="/Reports/new_report_7.rptdocument" />
+	</h:form>
+	</body>
+</f:view>
+
+</html>
